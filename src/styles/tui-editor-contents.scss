@@ -1,0 +1,292 @@
+@import "variables.scss";
+/**
+* @fileoverview style for content
+* @Original author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
+* @Customized by Vhan, Head at CodeSquad
+*/
+
+.tui-editor-defaultUI-toolbar {
+  overflow: unset;
+}
+
+.CodeMirror {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.CodeMirror-lines {
+  font-size: 15px;
+}
+
+.tui-editor-contents * {
+  line-height: 180%;
+  box-sizing: border-box;
+}
+
+.tui-editor-contents pre * {
+  line-height: 135%;
+}
+
+.tui-editor-contents i,
+.tui-editor-contents cite,
+.tui-editor-contents em,
+.tui-editor-contents var,
+.tui-editor-contents address,
+.tui-editor-contents dfn {
+  font-style: italic;
+}
+
+.tui-editor-contents strong {
+  font-weight: bold;
+}
+
+.tui-editor-contents > h1:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.tui-editor-contents h1,
+.tui-editor-contents h2,
+.tui-editor-contents h3,
+.tui-editor-contents h4,
+.tui-editor-contents h5,
+.tui-editor-contents h6 {
+  font-weight: bold;
+}
+
+.tui-editor-contents h1 {
+  font-size: $content-h1-font-size;
+  line-height: $content-h1-font-size * 1.3;
+  border-bottom: 3px double #dbdbdb;
+  margin: $content-h1-font-size * 1.3 0 1.5rem 0;
+  padding-bottom: 1rem;
+  color: #000;
+}
+
+.tui-editor-contents h2 {
+  font-size: $content-h2-font-size;
+  line-height: $content-h2-font-size * 1.3;
+  border-bottom: 1px solid #dbdbdb;
+  margin: $content-h2-font-size * 1.3 0 1.5rem 0;
+  padding-bottom: 1rem;
+  color: #333;
+}
+
+.tui-editor-contents h3 {
+  font-size: $content-h3-font-size;
+  line-height: $content-h3-font-size * 1.3;
+  margin: $content-h3-font-size * 1.3 0 1rem;
+  color: #333;
+}
+
+.tui-editor-contents h4 {
+  font-size: $content-h4-font-size;
+  line-height: $content-h4-font-size * 1.3;
+  margin: $content-h4-font-size * 1.3 0 1rem;
+  color: #333;
+}
+
+.tui-editor-contents h5 {
+  font-size: $content-h5-font-size;
+  line-height: $content-h5-font-size * 1.3;
+  margin: $content-h5-font-size * 1.3 0 -0.5rem;
+  color: #333;
+}
+
+.tui-editor-contents h6 {
+  font-size: $content-h6-font-size;
+  line-height: $content-h6-font-size * 1.3;
+  margin: $content-h6-font-size * 1.3 0 -0.5rem;
+  color: #333;
+}
+
+.tui-editor-contents blockquote {
+  border-left: 0.5rem solid #dddddd;
+  padding: 0 1.5rem;
+  color: #777;
+  margin: 1.5rem 0;
+}
+
+.tui-editor-contents blockquote > :first-child {
+  margin-top: 0;
+}
+
+.tui-editor-contents blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.tui-editor-contents pre,
+.tui-editor-contents code {
+  // font-family: Consolas, Courier, "Apple SD 산돌고딕 Neo", -apple-system,
+  //   "Lucida Grande", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic",
+  //   "Segoe UI", "돋움", dotum, sans-serif;
+  font-size: 1.4rem;
+  font-family: Consolas, Monaco, monospace;
+  // font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  border: 0;
+  border-radius: 0;
+  line-height: 140%;
+}
+
+.tui-editor-contents pre {
+  margin: 1rem 0 1.5rem;
+  padding: 2rem;
+  background-color: $codeblock-background-color;
+}
+
+.tui-editor-contents .lang-video {
+  padding: 2rem;
+  background-color: unset;
+}
+
+.tui-editor-contents .lang-form {
+  padding: 2rem;
+  background-color: unset;
+}
+
+.tui-editor-contents .lang-ihtml {
+  padding: 2rem;
+  background-color: unset;
+}
+
+.tui-editor-contents .lang-ihtml code {
+  font-family: "Nanum Barun Gothic", Courier, "Apple SD 산돌고딕 Neo", -apple-system,
+    "Lucida Grande", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "Segoe UI", "돋움", dotum,
+    sans-serif;
+}
+
+.tui-editor-contents code {
+  color: $codeblock-code-color;
+  padding: 0.5rem;
+  letter-spacing: $codeblock-code-spacing;
+  background-color: $codeblock-background-color;
+}
+
+.tui-editor-contents pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+}
+
+.tui-editor-contents pre.addon {
+  border: 0.1rem solid #e8ebed;
+  background-color: #fff;
+}
+
+.tui-editor-contents img {
+  margin: 0.5rem 0 1rem;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.tui-editor-contents table {
+  margin: 0.2rem 0 1.5rem;
+  color: #555;
+  width: auto;
+  border-collapse: collapse;
+}
+
+.tui-editor-contents table th,
+.tui-editor-contents table td {
+  height: 3rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.2rem;
+}
+
+.tui-editor-contents table td {
+  border: 0.1rem solid #eaeaea;
+}
+
+.tui-editor-contents table th {
+  border: 0.1rem solid #72777b;
+  border-top: 0;
+  background-color: #7b8184;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.tui-editor-contents ul,
+.tui-editor-contents menu,
+.tui-editor-contents ol,
+.tui-editor-contents dir {
+  display: block;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: #333;
+}
+
+.tui-editor-contents ol {
+  list-style-type: decimal;
+}
+
+.tui-editor-contents ul ul,
+.tui-editor-contents ul ol,
+.tui-editor-contents ol ol,
+.tui-editor-contents ol ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.tui-editor-contents ul li {
+  position: relative;
+}
+
+.tui-editor-contents ul p,
+ol p {
+  margin: 0;
+}
+
+.tui-editor-contents ul li.task-list-item:before,
+.tui-editor-contents pre ul li:before {
+  content: "";
+}
+
+.tui-editor-contents hr {
+  border-top: 0.1rem solid #eee;
+  margin: 1.5rem 0;
+}
+
+.tui-editor-contents a {
+  text-decoration: underline;
+  color: #5286bc;
+}
+
+.tui-editor-contents a:hover {
+  color: #007cff;
+}
+
+.tui-editor-contents {
+  font-size: $content-body-font-size;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.tui-editor-contents .task-list-item {
+  border: 0;
+  list-style: none;
+  padding-left: 2.2rem;
+  margin-left: -2.2rem;
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position-y: center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAADdJREFUKBVjvHv37n8GMgALSI+SkhJJWu/du8fARJIOJMWjGpECA505GjjoIYLEB6dVUNojFQAA/1MJUFWet/4AAAAASUVORK5CYII=");
+}
+
+.tui-editor-contents .task-list-item.checked {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAMpJREFUKBVjjJ/64D8DGYCJDD1gLbTVyM3OxJDiJMzAxcYIdyALnIWDAdJU7i/OICfCxsDMxMgwc88bwk5F1vTs/W+GFUffwY2H+1FBlI2hLliCQYCbGSyJrqlzwwuGj9//YWoMtRBgUBJnZ6gMEGeQFWaFOw9kE7omkG5GWDyCPF7mJ86gIMbO8P//fwZGRkYGXJpAGuFO/fbrP0PXppcMD179JKgJRSOIA9N8/NZXrM4DqYEBjOgAaYYFOUwRNhruVGyS+MTI1ggAx8NTGcUtFVQAAAAASUVORK5CYII=");
+}
+
+.tui-editor-contents .task-list-item input[type="checkbox"],
+.tui-editor-contents .task-list-item .task-list-item-checkbox {
+  margin-left: -1.7rem;
+  margin-right: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.tui-editor-contents-placeholder:before {
+  content: attr(data-placeholder);
+  color: grey;
+  line-height: 160%;
+  position: absolute;
+}
